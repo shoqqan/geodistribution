@@ -1,0 +1,14 @@
+@import "./globals";
+@import "./normalize";
+
+*{
+  color: $--text-accent;
+}
+
+a{
+  font-size: 16px;
+  &:hover{
+    color: $--primary-color;
+    transition: all .4s ease;
+  }
+}

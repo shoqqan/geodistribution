@@ -1,35 +1,13 @@
 import React from 'react';
-import Link from 'next/link';
 import { Logo } from '@/shared/ui/logo';
+import { Navigation } from '@/widgets/header/ui/navigation/navigation';
+import styles from './header.module.scss';
 
 export function Header() {
   return (
-    <header>
+    <header className={styles.header}>
       <Logo />
-      <nav>
-        <Link className="link" href="#what-is">
-          Что это?
-        </Link>
-        <Link className="link" href="#advantages">
-          Преимущества
-        </Link>
-        <Link className="link" href="#how-it-work">
-          Как это работает
-        </Link>
-        <Link className="link" href="#news">
-          Новости
-        </Link>
-        <Link className="link" href="#faq">
-          FAQ
-        </Link>
-        <button type="button" className="lang">
-          EN
-        </button>
-
-        <Link href="/catalog.html">
-          Каталог
-        </Link>
-      </nav>
+      <Navigation />
     </header>
   );
 }

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { fonts } from '@/shared/lib';
-import './globals.scss';
+import './styles/style.scss';
 
 export const metadata: Metadata = {
   title: 'Create Next App',

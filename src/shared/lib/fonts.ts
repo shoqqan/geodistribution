@@ -3,7 +3,7 @@ import localFont from 'next/font/local';
 
 export const raleway = Raleway({ subsets: ['latin', 'cyrillic'], display: 'swap' });
 export const dinPro = localFont({
-  src: '../ui/fonts/din-pro.woff2',
+  src: '../assets/fonts/din-pro.woff2',
   display: 'swap',
   variable: '--din-pro',
 });

@@ -2,8 +2,12 @@ import React from 'react';
 import { fonts } from '@/shared/lib';
 import styles from './logo.module.scss';
 
-export function Logo() {
+interface LogoProps {
+  variant?: 'primary' | 'secondary';
+}
+export function Logo(props: LogoProps) {
+  const { variant = 'primary' } = props;
   return (
-    <div className={`${fonts.dinPro.variable} ${styles.logo}`}>GeoDistribution</div>
+    <div className={`${fonts.dinPro.variable} ${styles.logo} ${styles[variant]}`}>GeoDistribution</div>
   );
 }

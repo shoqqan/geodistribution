@@ -2,7 +2,9 @@
   "extends": ["airbnb","airbnb-typescript","airbnb/hooks","next/core-web-vitals"],
   "rules": {
     "import/extensions": "off",
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off"
   },
   "parserOptions": {
     "project": "./tsconfig.json"
