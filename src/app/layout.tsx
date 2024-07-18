@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { fonts } from '@/shared/lib';
 import './styles/style.scss';
+import { Header } from '@/widgets/header';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -12,7 +13,11 @@ export default function RootLayout({ children }: Readonly<{
 }>) {
   return (
     <html lang="en">
-      <body className={fonts.raleway.className}>{children}</body>
+      <body className={fonts.raleway.className}>
+        <Header />
+        {children}
+        <footer />
+      </body>
     </html>
   );
 }

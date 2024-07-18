@@ -1,14 +1,22 @@
-@import "./globals";
-@import "./normalize";
+@import './globals';
+@import './normalize';
 
-*{
+* {
   color: $--text-accent;
 }
 
-a{
+a {
   font-size: 16px;
-  &:hover{
+  &:hover {
     color: $--primary-color;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
   }
+}
+
+p {
+  color: $--text-add;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 150%;
+  font-family: 'Raleway', sans-serif;
 }
