@@ -19,7 +19,7 @@ export function LandingHero() {
         </div>
       </div>
       <div className={styles.videoContainer}>
-        <video src="/videos/hero.mp4" playsInline loop muted autoPlay>
+        <video src="/landing/hero.mp4" playsInline loop muted autoPlay>
           <track kind="captions" srcLang="en" label="English" />
         </video>
       </div>

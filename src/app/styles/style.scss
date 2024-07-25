@@ -1,5 +1,5 @@
-@import './globals';
-@import './normalize';
+@import 'globals';
+@import 'normalize';
 
 * {
   color: $--text-accent;
@@ -19,4 +19,22 @@ p {
   font-weight: 300;
   line-height: 150%;
   font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: $--text-accent;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: $--text-accent;
+}
+.content {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
 }

@@ -4,7 +4,8 @@
     "import/extensions": "off",
     "import/prefer-default-export": "off",
     "react/require-default-props": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "import/no-absolute-path": "off"
   },
   "parserOptions": {
     "project": "./tsconfig.json"
