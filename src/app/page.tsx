@@ -1,14 +1,13 @@
-import { LandingHero } from '@/widgets/landing-hero';
-import { LandingExplore } from '@/widgets/landing-explore';
+import { Hero } from '@/app/widgets/landing/hero';
+import { Explore } from '@/app/widgets/landing/explore';
 
 export default function Home() {
   return (
-    <div>
-      <LandingHero />
-      <main className="content">
-
-        <LandingExplore />
-      </main>
-    </div>
+    <main>
+      <Hero />
+      <article className="content">
+        <Explore />
+      </article>
+    </main>
   );
 }

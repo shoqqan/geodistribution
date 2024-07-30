@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button } from '@/shared/ui/button';
-import styles from './landing-hero.module.scss';
+import { Button } from '@/app/shared/ui/button';
+import styles from './hero.module.scss';
 
-export function LandingHero() {
+export function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.heroText}>

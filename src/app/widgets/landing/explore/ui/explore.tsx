@@ -1,9 +1,10 @@
 import React from 'react';
-import { Button } from '@/shared/ui/button';
+import { Button } from '@/app/shared/ui/button';
 import Image from 'next/image';
-import styles from './landing-explore.module.scss';
+import Link from 'next/link';
+import styles from './explore.module.scss';
 
-export function LandingExplore() {
+export function Explore() {
   return (
     <section className={styles.section}>
       <h2>
@@ -19,15 +20,15 @@ export function LandingExplore() {
             в соцсетях:
           </h3>
           <div>
-            <a href="https://www.instagram.com/">
+            <Link href="https://www.instagram.com/" target="_blank">
               <Image src="/landing/explore-inst.svg" width={32} height={32} alt="Instagram logo" />
-            </a>
-            <a href="https://www.instagram.com/">
+            </Link>
+            <Link href="https://www.instagram.com/" target="_blank">
               <Image src="/landing/explore-wa.svg" width={32} height={32} alt="WhatsApp logo" />
-            </a>
-            <a href="https://www.instagram.com/">
+            </Link>
+            <Link href="https://www.instagram.com/" target="_blank">
               <Image src="/landing/explore-tg.svg" width={32} height={32} alt="Telegram Logo" />
-            </a>
+            </Link>
           </div>
           <Image src="/landing/explore.svg" width={400} height={300} className={styles.liquid} alt="Liquid Animation" />
         </div>

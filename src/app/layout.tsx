@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
-import { fonts } from '@/shared/lib';
+import { fonts } from '@/app/shared/lib';
 import '@/app/styles/style.scss';
-import { Header } from '@/widgets/header';
+import { Header } from '@/app/widgets/header';
+import { Footer } from '@/app/widgets/footer';
 
 export const metadata: Metadata = {
   title: 'GeoDistribution',
@@ -16,7 +17,7 @@ export default function RootLayout({ children }: Readonly<{
       <body className={fonts.raleway.className}>
         <Header />
         {children}
-        <footer />
+        <Footer />
       </body>
     </html>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Button } from '@/shared/ui/button';
+import { Button } from '@/app/shared/ui/button';
 import styles from './navigation.module.scss';
 
 export function Navigation() {

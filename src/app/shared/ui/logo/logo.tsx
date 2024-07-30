@@ -1,5 +1,5 @@
 import React from 'react';
-import { fonts } from '@/shared/lib';
+import { fonts } from '@/app/shared/lib';
 import styles from './logo.module.scss';
 
 interface LogoProps {

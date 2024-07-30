@@ -1,0 +1,52 @@
+.map{
+  width: 100%;
+  height: 500px;
+  position: relative;
+  iframe{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border: none;
+  }
+  .main{
+    position: relative;
+    overflow: hidden;
+    a{
+      color:#eee;
+      font-size:12px;
+      position:absolute;
+      &:nth-of-type(1){
+        top:0
+      }
+      &:nth-of-type(2){
+        top:14px
+      }
+    }
+    .overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      z-index: 1;
+      cursor: pointer;
+    }
+  }
+  .top{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, transparent, rgba(255, 255, 255));
+    position: absolute;
+    top: 0;
+    z-index: 10;
+  }
+  .bottom{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255));
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+  }
+}

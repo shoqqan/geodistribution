@@ -1,6 +1,6 @@
 import React from 'react';
-import { Logo } from '@/shared/ui/logo';
-import { Navigation } from '@/widgets/header/ui/navigation/navigation';
+import { Logo } from '@/app/shared/ui/logo';
+import { Navigation } from '@/app/widgets/header/ui/navigation';
 import styles from './header.module.scss';
 
 export function Header() {
