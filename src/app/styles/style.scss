@@ -4,7 +4,6 @@
 * {
   color: $--text-accent;
 }
-
 a {
   font-size: 16px;
   &:hover {
@@ -25,13 +24,23 @@ h2 {
   font-size: 40px;
   font-weight: 500;
   color: $--text-accent;
+  line-height: normal;
 }
 
 h3 {
   font-size: 24px;
   font-weight: 500;
   color: $--text-accent;
+  line-height: normal;
 }
+
+h4{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  color: $--text-accent;
+}
+
 .content {
   max-width: 1500px;
   margin: 0 auto;

@@ -5,6 +5,7 @@ import { Header } from '@/app/widgets/header';
 import { Footer } from '@/app/widgets/footer';
 import { getLocale, getMessages } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
+import { AntdRegistry } from '@ant-design/nextjs-registry';
 
 export const metadata: Metadata = {
   title: 'GeoDistribution',
@@ -20,9 +21,11 @@ export default async function RootLayout({ children }: Readonly<{
     <html lang={locale}>
       <body className={fonts.raleway.className}>
         <NextIntlClientProvider messages={messages}>
-          <Header />
-          {children}
-          <Footer />
+          <AntdRegistry>
+            <Header />
+            {children}
+            <Footer />
+          </AntdRegistry>
         </NextIntlClientProvider>
       </body>
     </html>
