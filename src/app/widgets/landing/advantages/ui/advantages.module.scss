@@ -1,0 +1,11 @@
+.section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  padding: 64px;
+  h2{
+    margin-bottom: 18px;
+  }
+}
