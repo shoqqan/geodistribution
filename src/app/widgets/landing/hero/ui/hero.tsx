@@ -1,10 +1,10 @@
 import React from 'react';
-import { Button } from '@/app/shared/ui/button';
+import Button from '@/app/shared/ui/button/button';
 import styles from './hero.module.scss';
 
 export function Hero() {
   return (
-    <section className={styles.hero}>
+    <div className={styles.hero}>
       <div className={styles.heroText}>
         <h1>
           Климатическая система для дома:
@@ -23,6 +23,6 @@ export function Hero() {
           <track kind="captions" srcLang="en" label="English" />
         </video>
       </div>
-    </section>
+    </div>
   );
 }

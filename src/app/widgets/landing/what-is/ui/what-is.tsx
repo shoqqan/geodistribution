@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button } from '@/app/shared/ui/button';
 import Image from 'next/image';
+import Button from '@/app/shared/ui/button/button';
 import styles from './what-is.module.scss';
 
 export function WhatIs() {

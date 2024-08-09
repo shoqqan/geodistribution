@@ -1,7 +1,7 @@
-import { Hero } from '@/app/widgets/landing/hero';
-import { Explore } from '@/app/widgets/landing/explore';
+import { Explore } from '@/app/widgets/landing/explore/ui/explore';
 import { WhatIs } from '@/app/widgets/landing/what-is/ui/what-is';
-import { Advantages } from '@/app/widgets/landing/advantages';
+import { Hero } from '@/app/widgets/landing/hero/ui/hero';
+import { Advantages } from '@/app/widgets/advantages/ui/advantages';
 
 export default function RootPage() {
   return (

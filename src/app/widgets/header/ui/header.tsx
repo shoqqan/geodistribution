@@ -1,6 +1,8 @@
+'use client';
+
 import React from 'react';
-import { Logo } from '@/app/shared/ui/logo';
-import { Navigation } from '@/app/widgets/header/ui/navigation';
+import { Navigation } from '@/app/widgets/header/ui/navigation/navigation';
+import { Logo } from '@/app/shared/ui/logo/logo';
 import styles from './header.module.scss';
 
 export function Header() {

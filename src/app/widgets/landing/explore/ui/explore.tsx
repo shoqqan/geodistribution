@@ -1,7 +1,7 @@
 import React from 'react';
-import { Button } from '@/app/shared/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
+import Button from '@/app/shared/ui/button/button';
 import styles from './explore.module.scss';
 
 export function Explore() {

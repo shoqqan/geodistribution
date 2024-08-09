@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import { fonts } from '@/app/shared/lib';
 import '@/app/styles/style.scss';
-import { Header } from '@/app/widgets/header';
-import { Footer } from '@/app/widgets/footer';
 import { getLocale, getMessages } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { AntdRegistry } from '@ant-design/nextjs-registry';
+import { Header } from '@/app/widgets/header/ui/header';
+import { Footer } from '@/app/widgets/footer/ui/footer';
 
 export const metadata: Metadata = {
   title: 'GeoDistribution',

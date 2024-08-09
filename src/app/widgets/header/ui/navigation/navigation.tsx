@@ -2,10 +2,10 @@
 
 import React, { useTransition } from 'react';
 import Link from 'next/link';
-import { Button } from '@/app/shared/ui/button';
 import { useTranslations } from 'next-intl';
-import { setUserLocale } from '@/app/shared/services';
 import { Locale } from '@/app/shared/lib';
+import { setUserLocale } from '@/app/shared/services/locale';
+import Button from '@/app/shared/ui/button/button';
 import styles from './navigation.module.scss';
 
 export function Navigation() {
