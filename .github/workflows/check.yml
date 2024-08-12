@@ -9,5 +9,5 @@ jobs:
       - name: Install deps
         run: npm ci
       - name: Lint
-        run: npm run lint:fix
+        run: npm run lint
 
