@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import { Locale } from '@/app/shared/lib';
 import { setUserLocale } from '@/app/shared/services/locale';
 import Button from '@/app/shared/ui/button/button';
+import { Skeleton } from 'antd';
 import styles from './navigation.module.scss';
 
 export function Navigation() {
@@ -16,6 +17,13 @@ export function Navigation() {
       setUserLocale(locale);
     });
   };
+  if (isPending) {
+    return (
+      <nav className={styles.navigation}>
+        <Skeleton active />
+      </nav>
+    );
+  }
   return (
     <nav className={styles.navigation}>
       <Link href="#what-is">
