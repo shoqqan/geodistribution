@@ -15,7 +15,13 @@ export function AdvantageCard({
           {text}
         </p>
       </div>
-      <Image src={image} alt="Advantage Image" width={520} height={400} />
+      <Image
+        src={image}
+        alt="Advantage Image"
+        width={520}
+        height={400}
+        style={{ width: '520px', height: '400px' }}
+      />
     </div>
   );
 }
