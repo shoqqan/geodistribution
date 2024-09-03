@@ -26,7 +26,6 @@ export function HowItWorks({ type }: HowItWorksProps) {
         start: 'top top',
         end: 'bottom bottom',
         scrub: true,
-        markers: true,
       });
 
       const cards = sectionsContainer.current.querySelectorAll(`.${styles.card}`);
@@ -52,26 +51,26 @@ export function HowItWorks({ type }: HowItWorksProps) {
     <section className={styles.section}>
       <h2>Как это работает</h2>
       <div ref={sectionsContainer} className={styles.stickyContainer}>
-        {sections.map((card) => (
+        {sections.map((section) => (
           <div
-            key={card.title}
+            key={section.title}
             className={`${styles.card}`}
-            data-visible={card.title === visible}
+            data-visible={section.title === visible}
           >
             <div className={styles.textContainer}>
-              <h3>{card.title}</h3>
-              <p>{card.description}</p>
+              <h3>{section.title}</h3>
+              <p>{section.description}</p>
             </div>
             <div className={styles.imgContainer}>
-              {card.images?.map((image) => (
+              {section.images?.map((image) => (
                 <Image
                   key={image.src.toString()}
                   {...image}
-                  alt={image.alt || `Image for ${card.title}`}
+                  alt={image.alt || `Image for ${section.title}`}
                 />
               ))}
-              {card.video && (
-                <video src={card.video} playsInline loop muted autoPlay>
+              {section.video && (
+                <video src={section.video} playsInline loop muted autoPlay aria-label={`Video for ${section.title}`}>
                   <track kind="captions" srcLang="en" label="English" />
                 </video>
               )}

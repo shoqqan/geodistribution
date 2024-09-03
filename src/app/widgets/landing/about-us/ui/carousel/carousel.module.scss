@@ -1,0 +1,15 @@
+@import '@/app/styles/globals';
+
+.swiper{
+  width: 100%;
+}
+.companyLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+
+  border-radius: 16px;
+  background: $--bg-card;
+  padding: 16px;
+}

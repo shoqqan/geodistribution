@@ -1,0 +1,40 @@
+@import '@/app/styles/globals';
+
+.section{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 64px;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  .text{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    h2{
+      margin-bottom: 18px;
+    }
+    button{
+      width: min-content;
+    }
+  }
+}
+
+.companyLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 40%;
+  border-radius: 16px;
+  background: $--bg-card;
+  padding: 16px;
+
+}
